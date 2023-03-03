@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// выводит все числа от введеного до минус введеного
 Console.WriteLine("введите любое число от 0 до 100");
 int MyNum = int.Parse(Console.ReadLine()!); // читаем что ввел юзер
 int NegativNum = - MyNum;                  // добавляем пременную с таким же числом со знаком минус
