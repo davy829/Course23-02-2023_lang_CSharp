@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// показывает какое из трех чисел большее
 Console.Write("Введите три разных числа _");
 int MyNum = int.Parse(Console.ReadLine()!);
 int MyNum2 = int.Parse(Console.ReadLine()!);
