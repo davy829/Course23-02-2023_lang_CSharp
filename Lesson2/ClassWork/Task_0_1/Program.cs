@@ -3,8 +3,8 @@
 int MaxNum(int num)
 {
     Console.WriteLine($" this is number: {num}");
-    int num1 = num / 10;
-    int num2 = num % 10;
+    int num1 = num / 10; //делим на 10
+    int num2 = num % 10; // остаток от деления на 10
     if (num1 > num2) 
     {
        return num1;

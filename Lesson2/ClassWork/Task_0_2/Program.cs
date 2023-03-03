@@ -5,7 +5,7 @@ Console.WriteLine("Input Two numbers_");
 
 void KranOrNo(int firstNum, int SecNum)
 {
-    int ostatok = firstNum % SecNum;
+    int ostatok = firstNum % SecNum;  // остаток от деления
     if ( ostatok == 0)
     {
     Console.WriteLine($"no Кратное! остаток :{ostatok}");
