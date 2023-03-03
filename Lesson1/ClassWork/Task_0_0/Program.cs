@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// преобразует число во вторую степень
 Console.Write("Введите число и узнайте его квадрат_ ");
 int number = int.Parse(Console.ReadLine()!);
 int sqear = number * number;       //умножение само на себя
