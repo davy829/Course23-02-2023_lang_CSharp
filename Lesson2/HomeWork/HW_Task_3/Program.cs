@@ -6,7 +6,6 @@ void LastNum(int num)
     Console.WriteLine($"{res} -- это третья цифра трехзначного -- {num} "); //печатаем
 }
 
-
 int MyNum = new Random().Next(10,200);  // генерим цифру двух или трех знак
 Console.WriteLine($"this is number! {MyNum}"); // выводим ее
 if (MyNum > 99)   //проверяем если больше 99 значит трехзнак значит зовем фунцию lastnum
