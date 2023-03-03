@@ -8,8 +8,8 @@ void PolOrNo(int MyNum)
     {
         int num1 = MyNum / 10000;  // 12321 / 10000 = 1 - первая цифра
         int num5 = MyNum % 10;     // 12321 % 10 = 1 пятая цифра
-        int num2 = MyNum / 1000 % 10;  // 12321 / 1000 = 12 % 10 = 2 вторая цифра
-        int num4 = MyNum % 100 / 10; // 12321 % 100 = 21 / 10 = 2 четвертая
+        int num2 = MyNum / 1000 % 10;  // 12321 / 1000 = 12 % 10 = 2 вторая  цифра
+        int num4 = MyNum % 100 / 10; // 12321 % 100 = 21 / 10 = 2 чет вертая
         if (num1 == num5 && num2 == num4) // проверяяем равна ли 1 == 5, 2 == 4 если да
         {
             Console.WriteLine($"{MyNum} is Polindrom xa! ");
