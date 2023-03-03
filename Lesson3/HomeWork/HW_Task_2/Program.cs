@@ -1,5 +1,5 @@
 ﻿// расстояние между двумя точками в 3д
-Console.WriteLine("Введите значения 6 шт через запятую _");
+Console.WriteLine("Введите значения 6 шт/ через запятую _");
 
 void Dis3d(double x1, double y1, double z1, double x2, double y2, double z2)
 {
