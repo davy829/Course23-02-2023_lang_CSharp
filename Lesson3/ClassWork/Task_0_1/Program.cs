@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// по номеру четверти графика определяет координаты возможные
 Console.Write("Введите номер четверти __");
 int MyQuater = int.Parse(Console.ReadLine()!);
 
