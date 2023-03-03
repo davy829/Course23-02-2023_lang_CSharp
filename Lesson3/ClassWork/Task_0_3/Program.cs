@@ -4,7 +4,7 @@ int MyNum = int.Parse(Console.ReadLine()!);
 
 void TableSquare(int n)
 {
-    int i = 1; // счетчик 
+    int i = 1; // счетчик + один
      while (n >= i)  // пока счетчик не вырос до введенного польз числа делаем
      {
         Console.Write($"{i} ->  {Math.Pow(i,2)}, "); //элемент -> вторая степень элемента
