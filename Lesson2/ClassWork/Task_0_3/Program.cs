@@ -5,7 +5,7 @@ int number = int.Parse(Console.ReadLine()!);
 
 void Krat7Krat23(int Num)
 {
-   if (Num % 7 == 0 & Num % 23 == 0)
+   if (Num % 7 == 0 & Num % 23 == 0) // проверяем делиться на 23 и 7 если да выводим
    {
     Console.WriteLine("kratnoe !!");
    }
