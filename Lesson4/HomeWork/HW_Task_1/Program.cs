@@ -6,11 +6,15 @@ Console.Write("Введите два числа , первое возведем 
 double FirstNum = double.Parse(Console.ReadLine()!);
 double SecondNum = double.Parse(Console.ReadLine()!);
 
+
+//-----------------------------------------------------------------
 // вариант первый простой с чужой функцией MATH.POW
 double resault = Math.Pow(FirstNum , SecondNum);
 Console.Write($"{FirstNum} in degree {SecondNum} = {resault}");
+//-----------------------------------------------------------------
 
 
+//-----------------------------------------------------------------
 //вариант ВТОРОЙ свой считает формула
 double NaturalDegreeCirkle(double FNum1, double SNum2) 
 {
