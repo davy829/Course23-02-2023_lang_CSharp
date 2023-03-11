@@ -1,7 +1,6 @@
 ﻿// проверяет ввод из пяти знаков полиндром или нет
 Console.Write("Введите пятизначное число, только честно, мы проверим !! _");
 int Polindrom = int.Parse(Console.ReadLine()!);
-
 void PolOrNo(int MyNum)
 {
     if (MyNum < 99999 )   if (MyNum > 9999)  // проверит точно пять знаков
@@ -24,10 +23,6 @@ void PolOrNo(int MyNum)
     else
     {
     Console.WriteLine($"Так дело не пойтет !  надо пять знаков ! Вы ввели {MyNum}");     
-    }
-       
-    
-
+    }    
 }
-
 PolOrNo(Polindrom);
