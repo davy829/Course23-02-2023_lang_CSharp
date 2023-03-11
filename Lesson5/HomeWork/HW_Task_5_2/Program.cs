@@ -34,7 +34,7 @@ int FindInArray(int[] Array)
     int summ = 0;
     for (int i = 0; i < len; i++)
     {
-        if (i % 2 == 1)
+        if (i % 2 == 0)
         {
             summ = summ + Array[i];
          Console.Write($"{Array[i]} + ");   
