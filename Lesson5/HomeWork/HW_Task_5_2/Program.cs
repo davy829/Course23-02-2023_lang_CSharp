@@ -9,17 +9,17 @@ int from = int.Parse(Console.ReadLine()!);
 Console.Write("Введите большее значение в массиве_");
 int to = int.Parse(Console.ReadLine()!);
 
-int[] FullArray(int Len, int Start, int End)
+double[] FullArray(int Len, int Start, int End)
 {
-    int[] arr = new int[Len];
+    double[] arr = new double[Len];
     for (int i = 0; i < Len; i++)
     {
-        arr[i] = new Random().Next(Start, End);
+        arr[i] = Math.Round(new Random().NextDouble() * Start * End, 2);  //   Next(Start, End);
     }
     return arr;
 }
 
-void PrintArr(int[] Array)
+void PrintArr(double[] Array)
 {
     int len = Array.Length;
     for (int i = 0; i < len; i++)
@@ -28,23 +28,23 @@ void PrintArr(int[] Array)
     }
 }
 
-int FindInArray(int[] Array)
+double FindInArray(double[] Array)
 {
     int len = Array.Length;
-    int summ = 0;
+    double summ = 0;
     for (int i = 0; i < len; i++)
     {
         if (i % 2 == 0)
         {
             summ = summ + Array[i];
-         Console.Write($"{Array[i]} + ");   
+            Console.Write($"{Array[i]} + ");
         }
     }
     Console.Write($"={summ}");
     return summ;
 }
 
-int[] massiv = FullArray(Size, from, to);
+double[] massiv = FullArray(Size, from, to);
 PrintArr(massiv);
 Console.WriteLine();
 FindInArray(massiv);
