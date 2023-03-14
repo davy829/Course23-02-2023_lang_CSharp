@@ -9,31 +9,31 @@ int from = int.Parse(Console.ReadLine()!);
 Console.Write("Введите большее значение в массиве_");
 int to = int.Parse(Console.ReadLine()!);
 
-int[] FullArray(int len, int start, int end)
+double[] FullArray(int len, int start, int end)
 {
-    int[] arr = new int[len];
+    double[] arr = new double[len];
     for (int i = 0; i < len; i++)
     {
-        arr[i] = new Random().Next(start,end);
+        arr[i] = Math.Round(new Random().NextDouble() *  start * end,2);
     }
     return arr;
 }
 
-void PrintArray(int[] Array)
+void PrintArray(double[] Array)
 {
     int len = Array.Length;
     for (int i = 0; i < len; i++)
     {
-     Console.Write($"{Array[i]} ");
+     Console.Write($"{Array[i]}- ");
     }
 }
 
-int MinMax(int[] Array)
+double MinMax(double[] Array)
 {
     int len=Array.Length;
-    int min=Array[0];
-    int max=Array[0];
-    int resault=0;
+    double min=Array[0];
+    double max=Array[0];
+    double resault=0;
     for (int i = 0; i < len; i++)
     {
       if (Array[i] < min)  
@@ -42,15 +42,15 @@ int MinMax(int[] Array)
       max = Array[i];
     }
     resault = max - min;
-    Console.Write($"{max}-{min}={resault} ");
+    Console.Write($"{max}-{min}={Math.Round(resault,3)} ");
   
     return resault;
 }
 
-int[] massiv = FullArray(Size,from,to);
+double[] massiv = FullArray(Size,from,to);
 PrintArray(massiv);
 Console.WriteLine();
-int res = MinMax(massiv);
-Console.WriteLine($"{res}");
+double res = MinMax(massiv);
+Console.Write($"{Math.Round(res,3)}");
 
 
