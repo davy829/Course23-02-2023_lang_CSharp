@@ -34,7 +34,7 @@ double MinMax(double[] Array)
     double min=Array[0];
     double max=Array[0];
     double resault=0;
-    for (int i = 0; i < len; i++)
+    for (int i = 1 ; i < len; i++)
     {
       if (Array[i] < min)  
       min = Array[i];
