@@ -4,11 +4,10 @@
 //пользователем.
 
 Console.WriteLine("Hello, World!");
-
-
-int b1 = 2;
-int k1 = 5;
-int b2 = 4;
-int k2 = 9;
-//int y = k1 * x + b1
-Console.WriteLine("Hello, World!");
+double b1 = 2;
+double k1 = 5;
+double b2 = 4;
+double k2 = 9;
+double x= (b2 - b1)/(k1 - k2);
+double y = k1 * x + b1;
+Console.WriteLine($"x={x}, y={y}");
