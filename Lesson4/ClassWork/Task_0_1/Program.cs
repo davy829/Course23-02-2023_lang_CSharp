@@ -4,7 +4,6 @@ int number7 = int.Parse(Console.ReadLine()!);
 
 int HowMutchNum(int num)
 {
-    int length = 6;
     int res = 0;
     for (int i = 0; num > 0; i++)
     {
