@@ -6,22 +6,22 @@ int row = int.Parse(Console.ReadLine()!);
 Console.Write("Введите ширину массива_");
 int col = int.Parse(Console.ReadLine()!);
 
-int[,] FullArray(int ArrRow, int ArrCol)
+double[,] FullArray(int ArrRow, int ArrCol)
 {
-    int[,] tmpArray = new int[ArrRow, ArrCol];
+    double[,] tmpArray = new double[ArrRow, ArrCol];
 
     for (int i = 0; i < ArrRow; i++)
     {
         for (int j = 0; j < ArrCol; j++)
         {
-            int value = new Random().Next(-99, 99);
+            double value = Math.Round(new Random().NextDouble() * 2.9, 3);
             tmpArray[i, j] = value;
         }
     }
     return tmpArray;
 }
 
-void PrintArray(int[,] tmpArray)
+void PrintArray(double[,] tmpArray)
 {
     int rowArray = tmpArray.GetLength(0);
     int colArray = tmpArray.GetLength(1);
@@ -29,11 +29,11 @@ void PrintArray(int[,] tmpArray)
     {
         for (int j = 0; j < colArray; j++)
         {
-            Console.Write($"{tmpArray[i, j]}  ");
+            Console.Write($"{tmpArray[i, j]}\t  ");
         }
         Console.WriteLine();
     }
 }
 
-int[,] MyArray = FullArray(row, col);
+double[,] MyArray = FullArray(row, col);
 PrintArray(MyArray);
