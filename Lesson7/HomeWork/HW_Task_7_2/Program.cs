@@ -31,7 +31,7 @@ void PrintArray(int[,] tmpArray)
     {
         for (int j = 0; j < colArray; j++)
         {
-            Console.Write($"{tmpArray[i, j]}  ");
+            Console.Write($"{tmpArray[i, j]} \t ");
         }
         Console.WriteLine();
     }
@@ -42,9 +42,9 @@ int FindPosReturnVal(int[,] Array, int FRow,int FCol)
   int row = Array.GetLength(0);
   int col =Array.GetLength(1);
   int value = 0;
-  if (row > FRow & col > FCol)
+  if (row >= FRow & col >= FCol)
   {
-   value = Array[FRow,FCol];
+   value = Array[FRow-1,FCol-1];
      Console.Write($"позиции[{FRow},{FCol}] содержат значение: {value}");
   }
    else  Console.Write("Такого элемента нет в массиве");
