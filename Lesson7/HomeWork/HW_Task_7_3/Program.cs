@@ -36,20 +36,20 @@ void PrintArray(int[,] tmpArray)
 }
 
 
-void SearchInArray(int[,]tmpArray)
+void SearchInArray(int[,] tmpArray)
 {
     int rowArray = tmpArray.GetLength(0);
     int colArray = tmpArray.GetLength(1);
-    int summ=0;
-    for (int i = 0; i < rowArray; i++)
+    double summ = 0;
+    for (int i = 0; i < colArray; i++)
     {
         summ = 0;
-        for (int j = 0; j < colArray; j++)
+        for (int j = 0; j < rowArray; j++)
         {
-           summ = summ + tmpArray[j,i] ;       // 
-                  }
+            summ = summ + tmpArray[j, i];       // 
+        }
         Console.WriteLine();
-        Console.Write($" среднее арифметич. {summ / rowArray}  столб № {i}");
+        Console.Write($" среднее арифметич {summ / rowArray}  столб № {i + 1}");
     }
 }
 
