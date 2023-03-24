@@ -85,6 +85,8 @@ FullArray(massiv);
 PrintArray2d(massiv);
 int[] myArray = SummRowsElement(massiv);
 int res = FindMinSummRow(myArray);
+Console.WriteLine($"+-------------------------------------------------+");
 Console.WriteLine($"номер строки {res} с минимальной суммой elements");
 string MinRowSumm = PrintRowMinSumm(massiv, res);
 Console.WriteLine($"строкa {MinRowSumm} с минимальной суммой elements");
+Console.WriteLine($"+_________________________________________________+");
