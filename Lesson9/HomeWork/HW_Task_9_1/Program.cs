@@ -16,7 +16,7 @@ void EvenNumbers(int M, int N)
 
         if (M == N) return;
         EvenNumbers(M, N - 1);
-        if (N % 2 == 0) Console.Write($"{N}\t ");
+        if (N % 2 == 0) Console.Write($"{N}\t "); // если остаток от дел на 2- ноль выводим
     }
     else
     {
